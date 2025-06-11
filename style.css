@@ -1,0 +1,111 @@
+body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.5s;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        h1 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+        
+        .password-container {
+            margin: 20px 0;
+        }
+        
+        input {
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            width: 70%;
+            transition: all 0.3s;
+        }
+        
+        input:focus {
+            border-color: #4dabf7;
+            outline: none;
+            box-shadow: 0 0 8px rgba(77, 171, 247, 0.5);
+        }
+        
+        button {
+            background-color: #4dabf7;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background-color: #339af0;
+            transform: translateY(-2px);
+        }
+        
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            min-height: 27px;
+            color: #ff6b6b;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        #success-page {
+            animation: rainbow 5s infinite;
+        }
+        
+        @keyframes rainbow {
+            0% { background-color: #ff6b6b; }
+            14% { background-color: #ff8e8e; }
+            28% { background-color: #ffcc8e; }
+            42% { background-color: #f8ff8e; }
+            57% { background-color: #8eff8e; }
+            71% { background-color: #8effcc; }
+            85% { background-color: #8ed3ff; }
+            100% { background-color: #ff6b6b; }
+        }
+        
+        #success-content {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        #success-content h1 {
+            font-size: 3em;
+            color: white;
+        }
+        
+        #success-content img {
+            max-width: 100%;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .attempt-counter {
+            font-size: 14px;
+            color: #868e96;
+            margin-top: 10px;
+        }
